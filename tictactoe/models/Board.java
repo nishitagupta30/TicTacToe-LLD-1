@@ -54,7 +54,7 @@ public class Board {
 
         for(int i=0;i<boardSize;i++){
             for(int j=0;j<boardSize;j++){
-                if(board[i][i] == Symbol.EMPTY.getSymbol()){
+                if(board[i][j].equals(Symbol.EMPTY.getSymbol())){
                     flag = false;
                     break;
                 }

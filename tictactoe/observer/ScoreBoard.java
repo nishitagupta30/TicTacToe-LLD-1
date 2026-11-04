@@ -13,6 +13,9 @@ public class ScoreBoard implements GameObserver{
 
     @Override 
     public void update(Game game) {
+        if (game.getWinner() == null) {
+            return;
+        }
         scoreBoard.put(game.getWinner().getPlayerId(),scoreBoard.getOrDefault(game.getWinner().getPlayerId(), 0L) + 1);
     }
 
