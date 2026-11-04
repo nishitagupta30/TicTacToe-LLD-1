@@ -21,6 +21,7 @@ public class DiagonalWinningStrategy implements WinningStrategy {
 
         if(won) return true;
 
+        won = true;
         for(int i=0;i<boardSize;i++){
             if(!board.getBoardCell(i, boardSize - 1 - i).equals(currentPlayerSymbol)){
                 won = false;
